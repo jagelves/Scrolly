@@ -1,8 +1,11 @@
 ---
 title: "Scrolly"
+format: 
+  closeread-html:
+    css: styles.css
 ---
 
-This is a Quarto website.
+This website offers a collection of tutorials covering R programming, statistics, probability, economics, and more. Browse the topics below to start exploring!
 
 ## Time Series
 
