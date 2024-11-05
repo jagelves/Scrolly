@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "TS1.html",
+    "href": "TS1.html",
+    "title": "Working With Time Series Data in R",
+    "section": "",
+    "text": "When analyzing time series data in R there are some important steps to follow. Below is example code that loads BTC data and creates a time series object to analyze.\n\n\n\n\nBe careful and always follow these steps.\n\n\n\n\nStart by cleaning the directory and loading the necessary packages.\n\n\n\n\nContinue by loading the data into R by using the read_csv() function and making sure you put the path in quotations.\n\n\n\n\nLastly, make sure that the Date variable is recognized in the format month/day/year by using the mdy() function and specifying it as the index for in the tsibble() function.\n\n\n\n\n\n\n\nrm(list=ls())\nlibrary(tidyverse)\nlibrary(fpp3)\nlibrary(ggthemes)\n\nBTC&lt;-read_csv(\"https://jagelves.github.io/Data/BTC_USD.csv\")\n\nBTC_ts &lt;- BTC %&gt;%\n  mutate(Date = mdy(Date)) %&gt;%\n  as_tsibble(index = Date)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2"
+  }
+]

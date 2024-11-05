@@ -1,0 +1,40 @@
+---
+title: Working With Time Series Data in R
+format: 
+  closeread-html:
+    css: styles.css
+---
+
+:::{.cr-section}
+When analyzing time series data in R there are some important steps to follow. Below is example code that loads BTC data and creates a time series object to analyze. @cr-pic
+
+Be careful and always follow these steps. @cr-features
+
+Start by cleaning the directory and loading the necessary packages. [@cr-features]{hlz="1-4"}
+
+Continue by loading the data into R by using the `read_csv()` function and making sure you put the path in quotations. [@cr-features]{hlz="6"}
+
+Lastly, make sure that the *Date* variable is recognized in the format *month/day/year* by using the `mdy()` function and specifying it as the index for in the `tsibble()` function. [@cr-features]{hlz="8-10"}
+
+:::{#cr-features}
+```{r, warning=FALSE, message=FALSE, echo=TRUE}
+rm(list=ls())
+library(tidyverse)
+library(fpp3)
+library(ggthemes)
+
+BTC<-read_csv("https://jagelves.github.io/Data/BTC_USD.csv")
+
+BTC_ts <- BTC %>%
+  mutate(Date = mdy(Date)) %>%
+  as_tsibble(index = Date)
+```
+:::
+
+::: {#cr-pic}
+![](BTC.png){width=60% height=300px fig-align="center"}
+
+:::
+
+:::
+

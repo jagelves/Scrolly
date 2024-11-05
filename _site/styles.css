@@ -1,0 +1,21 @@
+/* Increase the base font size */
+body {
+    font-size: 1.2em; /* Adjust the multiplier as needed */
+}
+
+/* Customize font size for specific elements */
+h1 {
+    font-size: 2em; /* Title size */
+}
+
+h2 {
+    font-size: 1.5em; /* Subtitle size */
+}
+
+p {
+    font-size: 1.2em; /* Paragraph text size */
+}
+
+code, pre {
+    font-size: 1.1em; /* Code block text size */
+}
