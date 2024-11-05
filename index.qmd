@@ -4,8 +4,6 @@ title: "Scrolly"
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Time Series
 
-```{r}
-1 + 1
-```
+Uploading time series data in R [TS1](TS1.qmd)

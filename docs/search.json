@@ -18,6 +18,13 @@
     "href": "index.html",
     "title": "Scrolly",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a Quarto website."
+  },
+  {
+    "objectID": "index.html#time-series",
+    "href": "index.html#time-series",
+    "title": "Scrolly",
+    "section": "Time Series",
+    "text": "Time Series\nUploading time series data in R TS1"
   }
 ]
