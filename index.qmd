@@ -10,3 +10,7 @@ This website offers a collection of tutorials covering R programming, statistics
 ## Time Series
 
 Uploading time series data in R [TS1](TS1.qmd)
+
+## Simulation
+
+The Bronco Wine Company [Bronco](Bronco.qmd)
