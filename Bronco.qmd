@@ -104,7 +104,7 @@ profits=c(profits,mean(simulation$profit))
 
 :::{#cr-code4}
 ```{r}
-tibble(production_targets,profits) %>% gt()
+tibble(production_targets,profits) %>% gt() %>% cols_align("center") 
 ```
 :::
 
