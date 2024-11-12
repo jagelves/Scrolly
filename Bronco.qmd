@@ -11,11 +11,11 @@ To solve this problem using simulation it's important to identify the inputs, th
 
 Start by including all the inputs provided by the problem in your R code. @cr-code1
 
-In particular, the demand is modeled using the triangular distribution with minimum of 500, maximum of 2500 and mode of 1500. [@cr-code1]{hlz="5-8"}
+In particular, the demand is modeled using the triangular distribution with minimum of 500, maximum of 2500 and mode of 1500. [@cr-code1]{hlz="7-9"}
 
-The number of bottles the company can supply in any given period is uncertain. The supply is modeled using the beta distribution with an alpha of 2 and beta of 5. This number provides a percentage of max production [@cr-code1]{hlz="11-12"}
+The number of bottles the company can supply in any given period is uncertain. The supply is modeled using the beta distribution with an alpha of 2 and beta of 5. This number provides a percentage of max production [@cr-code1]{hlz="12-13"}
 
-The max production capacity for the winery is 3000 bottles. [@cr-code1]{hlz="13"}
+The max production capacity for the winery is 3000 bottles. [@cr-code1]{hlz="14"}
 
 Make sure to also include the costs of production for your simulation. [@cr-code2]{hlz="2-5"}
 
