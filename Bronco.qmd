@@ -43,6 +43,7 @@ And calculate quartiles for your simulation @cr-code5
 ```{r, warning=FALSE, message=FALSE, echo=TRUE}
 library(extraDistr)
 library(tidyverse)
+library(gt)
 rm(list=ls())
 
 # Part 1: Demand modeled by a Triangular Distribution
@@ -103,7 +104,7 @@ profits=c(profits,mean(simulation$profit))
 
 :::{#cr-code4}
 ```{r}
-tibble(production_targets,profits)
+tibble(production_targets,profits) %>% gt()
 ```
 :::
 
