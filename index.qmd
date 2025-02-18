@@ -14,3 +14,8 @@ Uploading time series data in R [TS1](TS1.qmd)
 ## Simulation
 
 The Bronco Wine Company [Bronco](Bronco.qmd)
+
+## Summarizing Data
+
+Summarizing With Tidyverse [Summary](Summary.qmd)
+
