@@ -17,7 +17,7 @@ This code calculates the mean power output for each instructor. It works as foll
 
 First, we define the tibble (*spin*) and specify how to group the data. The `group_by()` function determines which variable to use for grouping. Since there are only two instructors (Sam and Olivia), two groups will be created. *Note: The grouping is done implicitly.* [@cr-code2]{hlz="1"}
 
-Next, we use the `summarise()` function to define how to summarize each group. Inside the function, we assign meaningful names to our output columns and apply corresponding summary functions. For class size, we use the name Size and assign the `n()` to count the number of observations under each instructor (grouping). The Mean column calculates the average *Total_kj* generated in each instructor's class. [@cr-code2]{hlz="2-3"}
+Next, we use the `summarise()` function to define how to summarize each group. Inside the function, we assign meaningful names to our output columns and apply corresponding summary functions. For class size, we use the name Size and assign the `n()` to count the number of observations under each instructor (grouping). The MeanPower column calculates the average *Total_kj* generated in each instructor's class. [@cr-code2]{hlz="2-3"}
 
 The resulting table shows how many participants attended each instructor’s class and their average power output (i.e., effort). Looks like Olivia pushes her 30 students hard! [@cr-code3]
 

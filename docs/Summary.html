@@ -192,14 +192,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This code calculates the mean power output for each instructor. It works as follows:</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-hlz="1" data-focus-on="cr-code2">
+<div class="trigger new-trigger" data-focus-on="cr-code2" data-hlz="1">
 <div class="narrative">
 <p>First, we define the tibble (<em>spin</em>) and specify how to group the data. The <code>group_by()</code> function determines which variable to use for grouping. Since there are only two instructors (Sam and Olivia), two groups will be created. <em>Note: The grouping is done implicitly.</em></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-hlz="2-3" data-focus-on="cr-code2">
+<div class="trigger new-trigger" data-focus-on="cr-code2" data-hlz="2-3">
 <div class="narrative">
-<p>Next, we use the <code>summarise()</code> function to define how to summarize each group. Inside the function, we assign meaningful names to our output columns and apply corresponding summary functions. For class size, we use the name Size and assign the <code>n()</code> to count the number of observations under each instructor (grouping). The Mean column calculates the average <em>Total_kj</em> generated in each instructor’s class.</p>
+<p>Next, we use the <code>summarise()</code> function to define how to summarize each group. Inside the function, we assign meaningful names to our output columns and apply corresponding summary functions. For class size, we use the name Size and assign the <code>n()</code> to count the number of observations under each instructor (grouping). The MeanPower column calculates the average <em>Total_kj</em> generated in each instructor’s class.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code3">
@@ -227,11 +227,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 3
   Total_kj Gender Instructor
      &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     
-1      260 M      Olivia    
-2      163 M      Sam       
-3       65 M      Sam       
-4      150 M      Sam       
-5      148 F      Sam       </code></pre>
+1      226 M      Sam       
+2      260 M      Olivia    
+3      129 M      Sam       
+4      170 M      Sam       
+5      188 F      Olivia    </code></pre>
 </div>
 </div>
 </div>
