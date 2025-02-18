@@ -1,23 +1,32 @@
-/* Set background color */
+
 body {
     background-color: #FAF9F6;
-    font-family: "Inter", "Roboto", "Open Sans", sans-serif; /* Modern font */
-    font-size: 1.2em; /* Adjust the multiplier as needed */
-    color: #333; /* Ensure text is readable against the light background */
+    font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
+    font-size: 1.2em; 
+    color: #333;
 }
+
+main, section, article {
+    background-color: #FAF9F6;
+}
+
+
 
 /* Customize font size for specific elements */
 h1 {
+    font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 2em; /* Title size */
     font-weight: 700; /* Make title bold */
 }
 
 h2 {
+    font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.5em; /* Subtitle size */
     font-weight: 600;
 }
 
 p {
+    font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.2em; /* Paragraph text size */
     line-height: 1.6; /* Improve readability */
 }
@@ -25,7 +34,7 @@ p {
 code, pre {
     font-size: 1.1em; /* Code block text size */
     font-family: "Courier New", Courier, monospace; /* Ensure monospaced font */
-    background-color: #f4f4f4; /* Light gray background for code blocks */
+    background-color: #E5E4E2;
     padding: 5px;
     border-radius: 5px;
 }
