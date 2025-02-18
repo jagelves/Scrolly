@@ -21,6 +21,8 @@ Next, we use the `summarise()` function to define how to summarize each group. I
 
 The resulting table shows how many participants attended each instructor’s class and their average power output (i.e., effort). Looks like Olivia pushes her 30 students hard! [@cr-code3]
 
+We can now use the summary statistic to help us choose the right instructor. @cr-pic2
+
 :::{#cr-code1}
 ```{r message=FALSE, echo=FALSE}
 library(tidyverse)
@@ -33,7 +35,7 @@ slice_sample(spin,n=5)
 :::
 
 ::: {#cr-pic}
-![](inst.png){width=60% height=300px fig-align="center"}
+![](inst.png){width=100% height=300px fig-align="center"}
 
 :::
 
@@ -53,4 +55,9 @@ summarise(Size=n(),
           MeanPower=mean(Total_kj)
 )
 ```
+:::
+
+::: {#cr-pic2}
+![](inst2.png){width=100% height=300px fig-align="center"}
+
 :::
