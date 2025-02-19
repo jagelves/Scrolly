@@ -1,50 +1,54 @@
 body {
-    background-color: #FAF9F6; /* White background */
+    background-color: #FAF9F6; /* Light beige background */
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.2em; 
-    color: #333;
+    color: #666; /* Lighter grey instead of #333, making it less black */
 }
 
 main, section, article {
-    background-color: #FAF9F6; /* White background for main content */
+    background-color: #FAF9F6; /* Match body background */
 }
 
-/* Navbar and links (keep these to prevent blue reappearing) */
+/* Navbar and links */
 .navbar {
-    background-color: #FAF9F6 !important; /* Or match body background */
+    background-color: #FAF9F6 !important; /* Match body background */
 }
 
 .nav-link, .navbar-brand {
-    color: #333 !important;
+    color: #666 !important; /* Match body text color for consistency */
 }
 
 .nav-link:hover, .nav-link:active, .nav-link:focus, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-    color: #666 !important;
+    color: #999 !important; /* Even lighter on hover for contrast */
 }
 
-/* Customize font size for specific elements */
+/* Customize font size for specific elements (no need to change color here unless you want overrides) */
 h1 {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 2em; 
     font-weight: 700; 
+    /* Inherits color: #666 from body, no need to specify unless you want a different shade */
 }
 
 h2 {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.5em; 
     font-weight: 600;
+    /* Inherits color: #666 from body */
 }
 
 p {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.2em; 
     line-height: 1.6; 
+    /* Inherits color: #666 from body */
 }
 
 code, pre {
     font-size: 1.1em; 
     font-family: "Courier New", Courier, monospace; 
-    background-color: #E5E4E2;
+    background-color: #FAF9F6; /* Match background for consistency */
     padding: 5px;
     border-radius: 5px;
+    color: #666; /* Keep code darker for contrast, or lighten to #666 if desired */
 }
