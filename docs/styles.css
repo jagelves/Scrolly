@@ -11,7 +11,7 @@ main, section, article {
 }
 
 .nav-link {
-    color: #FAF9F6;
+    color: #FAF9F6 !important;
 }
 
 
