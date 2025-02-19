@@ -12,21 +12,20 @@ Let's learn how to use the pipe operator `%>%` in Tidyverse. @cr-pic1
 
 When working with data in R, we often perform multiple operations sequentially. Instead of nesting functions, we can use the pipe operator `%>%` to make the code more readable and intuitive. 
 
-Let's load some data on a spin class (stationary bike exercise). This code loads the `tidyverse` package and the data @cr-code1
+Let's load some data on a spin class (stationary bike exercise). This code loads the `tidyverse` package and the spin data. @cr-code1
 
 
-If we wanted to find the average output for male participants we can use the following the filter and then mean functions. However, we would have to first create and object and then use the `$` to find the mean of the variable. @cr-code2
-
+If we wanted to find the average output for male participants we can use the `filter()` and the `mean()` functions. However, we would have to first create an object with the filtered data and then use the `$` to find the mean of the variable. @cr-code2
 
 This code uses the piping operator `%>%`. Piping allows us to send the result of one function directly into the next, improving clarity and reducing the need for intermediate variables. @cr-code3
 
-This is how piping works. First, we define the dataset (spin) then we filter for only Males using the `filter()` function. Note that the `%>%` operator can be read as "then". [@cr-code3]{hlz="1"}
+This is how piping works. First, we define the dataset (spin) and then we filter for only Males using the `filter()` function. Note that the `%>%` operator can be read as "then". [@cr-code3]{hlz="1"}
 
 Then we summarize the data using the `summarise()` function to compute the mean power output. [@cr-code3]{hlz="2"}
 
 By using the pipe operator, we avoid unnecessary temporary objects and make the logic easier to follow. @cr-code3
 
-The final result shows the average power output for Males that took a spin class. Use `%>%` to keep your code clean and readable! @cr-code4
+The final result shows a tibble with the average power output for Males. Use `%>%` to keep your code clean and readable! @cr-code4
 
 
 :::{#cr-code1}

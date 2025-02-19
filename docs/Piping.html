@@ -184,12 +184,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code1">
 <div class="narrative">
-<p>Let’s load some data on a spin class (stationary bike exercise). This code loads the <code>tidyverse</code> package and the data</p>
+<p>Let’s load some data on a spin class (stationary bike exercise). This code loads the <code>tidyverse</code> package and the spin data.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code2">
 <div class="narrative">
-<p>If we wanted to find the average output for male participants we can use the following the filter and then mean functions. However, we would have to first create and object and then use the <code>$</code> to find the mean of the variable.</p>
+<p>If we wanted to find the average output for male participants we can use the <code>filter()</code> and the <code>mean()</code> functions. However, we would have to first create an object with the filtered data and then use the <code>$</code> to find the mean of the variable.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code3">
@@ -197,12 +197,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This code uses the piping operator <code>%&gt;%</code>. Piping allows us to send the result of one function directly into the next, improving clarity and reducing the need for intermediate variables.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-code3" data-hlz="1">
+<div class="trigger new-trigger" data-hlz="1" data-focus-on="cr-code3">
 <div class="narrative">
-<p>This is how piping works. First, we define the dataset (spin) then we filter for only Males using the <code>filter()</code> function. Note that the <code>%&gt;%</code> operator can be read as “then”.</p>
+<p>This is how piping works. First, we define the dataset (spin) and then we filter for only Males using the <code>filter()</code> function. Note that the <code>%&gt;%</code> operator can be read as “then”.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-code3" data-hlz="2">
+<div class="trigger new-trigger" data-hlz="2" data-focus-on="cr-code3">
 <div class="narrative">
 <p>Then we summarize the data using the <code>summarise()</code> function to compute the mean power output.</p>
 </div>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code4">
 <div class="narrative">
-<p>The final result shows the average power output for Males that took a spin class. Use <code>%&gt;%</code> to keep your code clean and readable!</p>
+<p>The final result shows a tibble with the average power output for Males. Use <code>%&gt;%</code> to keep your code clean and readable!</p>
 </div>
 </div>
 <div class="trigger">
