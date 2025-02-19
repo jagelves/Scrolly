@@ -61,5 +61,12 @@
     "title": "The Piping Operator (%>%)",
     "section": "",
     "text": "Let’s learn how to use the pipe operator %&gt;% in Tidyverse.\n\n\n\n\nWhen working with data in R, we often perform multiple operations sequentially. Instead of nesting functions, we can use the pipe operator %&gt;% to make the code more readable and intuitive.\n\n\n\n\nLet’s load some data on a spin class (stationary bike exercise). This code loads the tidyverse package and the data\n\n\n\n\nIf we wanted to find the average output for male participants we can use the following the filter and then mean functions. However, we would have to first create and object and then use the $ to find the mean of the variable.\n\n\n\n\nThis code uses the piping operator %&gt;%. Piping allows us to send the result of one function directly into the next, improving clarity and reducing the need for intermediate variables.\n\n\n\n\nThis is how piping works. First, we define the dataset (spin) then we filter for only Males using the filter() function. Note that the %&gt;% operator can be read as “then”.\n\n\n\n\nThen we summarize the data using the summarise() function to compute the mean power output.\n\n\n\n\nBy using the pipe operator, we avoid unnecessary temporary objects and make the logic easier to follow.\n\n\n\n\nThe final result shows the average power output for Males that took a spin class. Use %&gt;% to keep your code clean and readable!\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(tidyverse)\nspin&lt;-read_csv(\"https://jagelves.github.io/Data/Spin.csv\")\n\n\n\n\nmale&lt;-filter(spin, Gender==\"M\")\nmean(male$Total_kj)\n\n\n\n\nspin %&gt;% filter(Gender==\"M\") %&gt;% \n  summarise(mean(Total_kj))\n\n\n\n\n\n# A tibble: 1 × 1\n  `mean(Total_kj)`\n             &lt;dbl&gt;\n1             186."
+  },
+  {
+    "objectID": "index.html#the-piping-operator",
+    "href": "index.html#the-piping-operator",
+    "title": "Scrolly",
+    "section": "The Piping Operator",
+    "text": "The Piping Operator\nUsing the Piping Operator in R. Piping"
   }
 ]

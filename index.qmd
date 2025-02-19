@@ -19,3 +19,7 @@ The Bronco Wine Company [Bronco](Bronco.qmd)
 
 Summarizing With Tidyverse [Summary](Summary.qmd)
 
+## The Piping Operator
+
+Using the Piping Operator in R. [Piping](Piping.qmd)
+
