@@ -10,6 +10,10 @@ main, section, article {
     background-color: #FAF9F6;
 }
 
+.nav-link {
+    color: #FAF9F6;
+}
+
 
 
 /* Customize font size for specific elements */
