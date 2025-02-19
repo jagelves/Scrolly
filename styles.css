@@ -1,43 +1,49 @@
-
 body {
-    background-color: #FAF9F6;
+    background-color: #FAF9F6; /* White background */
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
     font-size: 1.2em; 
     color: #333;
 }
 
 main, section, article {
-    background-color: #FAF9F6;
+    background-color: #FAF9F6; /* White background for main content */
 }
 
-.nav-link {
-    color: #FAF9F6 !important;
+/* Navbar and links (keep these to prevent blue reappearing) */
+.navbar {
+    background-color: #FAF9F6 !important; /* Or match body background */
 }
 
+.nav-link, .navbar-brand {
+    color: #333 !important;
+}
 
+.nav-link:hover, .nav-link:active, .nav-link:focus, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
+    color: #666 !important;
+}
 
 /* Customize font size for specific elements */
 h1 {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
-    font-size: 2em; /* Title size */
-    font-weight: 700; /* Make title bold */
+    font-size: 2em; 
+    font-weight: 700; 
 }
 
 h2 {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
-    font-size: 1.5em; /* Subtitle size */
+    font-size: 1.5em; 
     font-weight: 600;
 }
 
 p {
     font-family: "Inter", "Roboto", "Open Sans", sans-serif; 
-    font-size: 1.2em; /* Paragraph text size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.2em; 
+    line-height: 1.6; 
 }
 
 code, pre {
-    font-size: 1.1em; /* Code block text size */
-    font-family: "Courier New", Courier, monospace; /* Ensure monospaced font */
+    font-size: 1.1em; 
+    font-family: "Courier New", Courier, monospace; 
     background-color: #E5E4E2;
     padding: 5px;
     border-radius: 5px;
