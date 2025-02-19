@@ -2,6 +2,7 @@
 title: Working With Time Series Data in R
 format: 
   closeread-html:
+    theme: flatly
     css: styles.css
 ---
 

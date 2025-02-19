@@ -2,6 +2,7 @@
 title: Summarizing Data With Tidyverse
 format: 
   closeread-html:
+    theme: flatly
     css: styles.css
 ---
 

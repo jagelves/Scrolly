@@ -2,6 +2,7 @@
 title: The Piping Operator (%>%)
 format: 
   closeread-html:
+    theme: flatly
     css: styles.css
 ---
 
