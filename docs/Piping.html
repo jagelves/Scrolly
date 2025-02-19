@@ -197,14 +197,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This code uses the piping operator <code>%&gt;%</code>. Piping allows us to send the result of one function directly into the next, improving clarity and reducing the need for intermediate variables.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-hlz="1" data-focus-on="cr-code3">
+<div class="trigger new-trigger" data-focus-on="cr-code3" data-hlz="1">
 <div class="narrative">
-<p>This is how piping works. First, we define the dataset (spin) and then we filter for only Males using the <code>filter()</code> function. Note that the <code>%&gt;%</code> operator can be read as “then”.</p>
+<p>This is how piping works. We start with the spin dataset and then we filter for only Males using the <code>filter()</code> function. Since we are using piping, we do not have to specify the dataset again within the filter function. Note that the <code>%&gt;%</code> operator can be read as “then”.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-hlz="2" data-focus-on="cr-code3">
+<div class="trigger new-trigger" data-focus-on="cr-code3" data-hlz="2">
 <div class="narrative">
-<p>Then we summarize the data using the <code>summarise()</code> function to compute the mean power output.</p>
+<p>Then we summarize the data (the one that is filtered by only males) using the <code>summarise()</code> function to compute the mean power output.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-code3">

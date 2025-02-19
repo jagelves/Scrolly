@@ -19,9 +19,9 @@ If we wanted to find the average output for male participants we can use the `fi
 
 This code uses the piping operator `%>%`. Piping allows us to send the result of one function directly into the next, improving clarity and reducing the need for intermediate variables. @cr-code3
 
-This is how piping works. First, we define the dataset (spin) and then we filter for only Males using the `filter()` function. Note that the `%>%` operator can be read as "then". [@cr-code3]{hlz="1"}
+This is how piping works. We start with the spin dataset and then we filter for only Males using the `filter()` function. Since we are using piping, we do not have to specify the dataset again within the filter function. Note that the `%>%` operator can be read as "then". [@cr-code3]{hlz="1"}
 
-Then we summarize the data using the `summarise()` function to compute the mean power output. [@cr-code3]{hlz="2"}
+Then we summarize the data (the one that is filtered by only males) using the `summarise()` function to compute the mean power output. [@cr-code3]{hlz="2"}
 
 By using the pipe operator, we avoid unnecessary temporary objects and make the logic easier to follow. @cr-code3
 
